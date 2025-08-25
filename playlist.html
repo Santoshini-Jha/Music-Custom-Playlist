@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Playlist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .playlist-container {
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            padding: 30px;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin-bottom: 25px;
+            color: #1db954;
+        }
+
+        .playlist .song {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 10px;
+            border-bottom: 1px solid #333;
+        }
+
+        .playlist .song:hover {
+            background-color: #2a2a2a;
+            cursor: pointer;
+        }
+
+        .song-info h3 {
+            font-size: 16px;
+            color: #ffffff;
+        }
+
+        .song-info p {
+            font-size: 14px;
+            color: #b3b3b3;
+        }
+
+        .duration {
+            font-size: 14px;
+            color: #b3b3b3;
+        }
+
+        .play-btn {
+            background-color: #1db954;
+            border: none;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            font-size: 16px;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        .play-btn:hover {
+            background-color: #1ed760;
+        }
+
+        .song-info {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="playlist-container">
+        <header>
+            <h1>🎧 My Playlist</h1>
+        </header>
+
+        <div class="playlist">
+            <div class="song">
+                <button class="play-btn">▶</button>
+                <div class="song-info">
+                    <h3>Tere Liye</h3>
+                    <p>Atif Aslam,Shreya Ghoshal</p>
+                </div>
+                <span class="duration">4:39</span>
+            </div>
+
+            <div class="song">
+                <button class="play-btn">▶</button>
+                <div class="song-info">
+                    <h3>Rozana</h3>
+                    <p>Shreya Ghoshal</p>
+                </div>
+                <span class="duration">4:34</span>
+            </div>
+
+            <div class="song">
+                <button class="play-btn">▶</button>
+                <div class="song-info">
+                    <h3>Aadha Ishq</h3>
+                    <p>Salim-Sulaiman,Shreya Ghoshal</p>
+                </div>
+                <span class="duration">4:43</span>
+            </div>
+
+            <div class="song">
+                <button class="play-btn">▶</button>
+                <div class="song-info">
+                    <h3>Zaalima</h3>
+                    <p>Arijit Singh,Harshdeep Kaur</p>
+                </div>
+                <span class="duration">4:59</span>
+            </div>
+
+            <div class="song">
+                <button class="play-btn">▶</button>
+                <div class="song-info">
+                    <h3>Samjhawan</h3>
+                    <p>Jawad Ahmed,Sharib Toshi,Shreya Ghoshal,Arijit Singh</p>
+                </div>
+                <span class="duration">4:29</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
